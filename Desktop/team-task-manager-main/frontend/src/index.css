@@ -1,0 +1,109 @@
+:root {
+  color-scheme: light;
+  font-family: Inter, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8fafc 0%, #eef2ff 100%);
+  color: #0f172a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+  border: none;
+  box-shadow: 0 10px 25px rgba(79, 70, 229, 0.2);
+}
+
+.btn-primary:hover {
+  filter: brightness(1.03);
+}
+
+.auth-shell {
+  min-height: 100vh;
+  background: radial-gradient(circle at top left, rgba(129, 140, 248, 0.22), transparent 30%),
+    linear-gradient(135deg, #f8fafc 0%, #eef2ff 100%);
+}
+
+.sidebar-panel {
+  width: 260px;
+  background: linear-gradient(180deg, #111827 0%, #312e81 100%);
+}
+
+.sidebar-link {
+  color: rgba(255, 255, 255, 0.72);
+  border-radius: 0.85rem;
+  transition: all 0.2s ease;
+}
+
+.sidebar-link:hover,
+.sidebar-link.active {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.13);
+}
+
+.brand-badge {
+  width: 42px;
+  height: 42px;
+  border-radius: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  color: white;
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+}
+
+.page-card {
+  border-radius: 1rem;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  box-shadow: 0 10px 35px rgba(15, 23, 42, 0.05);
+  background: rgba(255, 255, 255, 0.94);
+}
+
+.list-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+.page-title {
+  letter-spacing: -0.02em;
+}
+
+.text-muted-soft {
+  color: #64748b;
+}
+
+.stat-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 4px;
+  background: linear-gradient(90deg, #4f46e5, #7c3aed);
+}
+
+.stat-card.success::before {
+  background: linear-gradient(90deg, #16a34a, #34d399);
+}
+
+.stat-card.warning::before {
+  background: linear-gradient(90deg, #f59e0b, #fbbf24);
+}
+
+.stat-card.danger::before {
+  background: linear-gradient(90deg, #dc2626, #fb7185);
+}
